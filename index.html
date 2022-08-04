@@ -4,71 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Шпора - текст</title>
+    <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="IMG_20210605_211014.jpg" alt="Аватарка" width="300" />
-    <h1>Аленькин Даниил</h1>
-    <p>
-      <strong><em>Студент</em></strong> Санкт-Петербургского Государственного
-      экономического университета.
-    </p>
-    <h3>Мои Хобби</h3>
-    <ul>
-      <li>Valorant</li>
-      <li>Готовка</li>
-      <li>Фильмы</li>
-    </ul>
-    <h3>Список социальных сетей</h3>
-    <a href="https://vk.com/dalenkn" target="_blank">Вконтакте</a>
-    |
-    <a href="https://t.me/SmoshDog" target="_blank">Telegram</a>
-    |
-    <a href="https://youtube.com" target="_blank">YouTube</a>
-    <h2>Опыт работы</h2>
-    <table border="1" width="500" height="200">
-      <thead>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Время работы</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Самокат</td>
-          <td>Курьер</td>
-          <td>2020-2021</td>
-        </tr>
-        <tr>
-          <td>Rebotica</td>
-          <td>Преподаватель</td>
-          <td>2021-now</td>
-        </tr>
-      </tbody>
-    </table>
-    <h1>Связаться со мной</h1>
-    <form>
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя" />
+    <div class="container">
+      <div class="card main">
+        <div class="img">
+          <img id="mainpic" src="IMG_20210605_211014.jpg" alt="Аватарка" />
+        </div>
+        <div class="text">
+          <h1>Аленькин Даниил</h1>
+          <p>
+            <strong><em>Студент</em></strong> Санкт-Петербургского
+            Государственного экономического университета.
+          </p>
+        </div>
       </div>
-      <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email" />
+      <div class="card hobby">
+        <h3>Мои Хобби</h3>
+        <ul>
+          <li>Valorant</li>
+          <li>Готовка</li>
+          <li>Фильмы</li>
+        </ul>
       </div>
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Введите сообщение"
-        ></textarea>
+
+      <div class="card links">
+        <h3>Список социальных сетей</h3>
+        <a href="https://vk.com/dalenkn" target="_blank">Вконтакте</a>
+        |
+        <a href="https://t.me/SmoshDog" target="_blank">Telegram</a>
+        |
+        <a href="https://youtube.com" target="_blank">YouTube</a>
       </div>
-      <div>
-        <button type="submit">Отправить!</button>
+      <div class="card jobs">
+        <h3>Опыт работы</h3>
+        <table width="500" height="200">
+          <thead>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Время работы</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Самокат</td>
+              <td>Курьер</td>
+              <td>2020-2021</td>
+            </tr>
+            <tr>
+              <td>Rebotica</td>
+              <td>Преподаватель</td>
+              <td>2021-now</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </form>
+      <div class="card form">
+        <h2>Связаться со мной</h2>
+        <form>
+          <div class="name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+          <div class="email">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+          <div class="message">
+            <label for="message">Ваше сообщение:</label>
+            <br />
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Введите сообщение"
+            ></textarea>
+          </div>
+          <div>
+            <button class="btn" type="submit">Отправить!</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
